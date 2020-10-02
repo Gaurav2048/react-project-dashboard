@@ -2,12 +2,13 @@ import React from 'react';
 import Likes from './Likes';
 import './card.scss';
 
-const Card = () => {
+const Card = ({ data }) => {
+  const { title, imogi } = data;
   return (
     <div className="project-card">
       <div className="card-header">
         <div className="card-img">
-          <p>&#128540;</p>
+          <p>{imogi}</p>
         </div>
 
         <div className="header-text">
