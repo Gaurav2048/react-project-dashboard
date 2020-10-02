@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400&display=swap');
+$backgroundColor: #f5f7fc;
+$white-color: #fff;
+$theme-color: #56c7f2;
+$nav-text-color-active: #2f3039;
+$nav-text-color-inactive: #b4b8c6;
+$font: 'Nunito', sans-serif;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: $backgroundColor;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: $white-color;
+  flex-wrap: wrap;
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    background-color: $white-color;
+    margin: 10px 0;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/play.png);
+    background-position: center;
+    background-size: contain;
+    margin: 0 20px 0 0;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: $white-color;
+
+    li {
+      margin: 0 20px;
+      background-color: $white-color;
+
+      a {
+        font-family: $font;
+        font-weight: bold;
+        background-color: $white-color;
+        color: $nav-text-color-inactive;
+        text-decoration: none;
+      }
+    }
+  }
+  img {
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    border: 2px solid #cbcbcb;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .profile-link {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    background-color: $white-color;
+    align-items: center;
+
+    .search-input {
+      border: 1px solid #c2c0c0;
+      padding: 4px 10px;
+      height: 28px;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: $white-color;
+      .search-icon {
+        background-image: url(./assets/loupe.png);
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+        background-position: center;
+        background-color: $white-color;
+      }
+      input {
+        border: none;
+        background-color: $white-color;
+        margin-left: 10px;
+        outline: none;
+      }
+    }
+
+    .notification {
+      padding: 0 8px;
+      height: 28px;
+      background-color: $theme-color;
+      border-radius: 4px;
+      color: $white-color;
+      font-family: $font;
+      text-align: center;
+      vertical-align: middle;
+      margin: 0 10px;
+      line-height: 28px;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
