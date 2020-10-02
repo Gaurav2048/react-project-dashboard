@@ -13,6 +13,7 @@ const Project = () => {
         <Card />
         <Card />
         <Card />
+        <Card />
       </div>
     </div>
   );
