@@ -1,0 +1,26 @@
+$font: 'Nunito', sans-serif;
+
+.project {
+  padding: 15px 30px;
+
+  h1 {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: $font;
+  }
+
+  h5 {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: $font;
+    color: #8a7e7e;
+    margin: 10px 0;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
