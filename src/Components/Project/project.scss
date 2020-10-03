@@ -10,16 +10,20 @@ $font: 'Nunito', sans-serif;
   }
 
   h5 {
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 500;
     font-family: $font;
     color: #8a7e7e;
-    margin: 10px 0;
+    margin: 15px 0;
   }
 
   .card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .completed-projects {
+    margin-top: 20px;
   }
 }

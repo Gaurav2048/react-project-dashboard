@@ -25,6 +25,18 @@ const Project = () => {
       imogi: '\u{1F929}',
     },
   ];
+
+  const completedProjects = [
+    {
+      title: 'Cyberpunk277',
+      imogi: '🚀',
+    },
+    {
+      title: 'Phantom of the Opera',
+      imogi: '\u{1F60D}',
+    },
+  ];
+
   return (
     <div className="project">
       <h1>Projects</h1>
@@ -32,6 +44,13 @@ const Project = () => {
       <div className="card-container">
         {projects.map((project, index) => (
           <Card key={index} data={project} />
+        ))}
+      </div>
+
+      <h5 className="completed-projects">Completed Projects</h5>
+      <div className="card-container">
+        {completedProjects.map((project, index) => (
+          <Card data={project} key={index} completed />
         ))}
       </div>
     </div>

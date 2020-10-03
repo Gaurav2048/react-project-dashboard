@@ -2,8 +2,6 @@ $font: 'Nunito', sans-serif;
 
 .project-card {
   width: 90% * (1/4);
-  background-color: #fff;
-  border-radius: 10px;
   padding: 10px 10px;
   margin-bottom: 20px;
   margin-right: 10px;
@@ -13,7 +11,7 @@ $font: 'Nunito', sans-serif;
   .card-header {
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: transparent;
 
     .card-img p {
       width: 70px;
@@ -30,18 +28,18 @@ $font: 'Nunito', sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background-color: white;
+      background-color: transparent;
       font-family: $font;
       font-weight: 600;
       padding-left: 10px;
       div {
-        background-color: white;
+        background-color: transparent;
         font-weight: 700;
         font-size: 18px;
       }
       .like-container {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         .like-img {
           width: 22px;
           height: 22px;
@@ -68,12 +66,24 @@ $font: 'Nunito', sans-serif;
   }
 }
 
+.in-completed {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.completed {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px dashed #cbcbcb;
+}
+
 .card-body {
+  background-color: transparent;
   p {
     padding-right: 25px;
     font-family: $font;
     color: gray;
-    background-color: white;
+    background-color: transparent;
     padding-top: 20px;
     padding-bottom: 48px;
   }
@@ -83,15 +93,17 @@ $font: 'Nunito', sans-serif;
   display: flex;
   width: 100%;
   flex-direction: row;
-  background-color: white;
+  background-color: transparent;
   padding-bottom: 15px;
 
   .casting {
     flex-grow: 1;
+    background-color: transparent;
   }
 
   .dod {
     flex-grow: 1;
+    background-color: transparent;
   }
 
   .count {
@@ -99,14 +111,14 @@ $font: 'Nunito', sans-serif;
     color: black;
     font-size: 18px;
     font-weight: 500;
-    background-color: white;
+    background-color: transparent;
   }
   .label {
     font-family: $font;
     color: gray;
     font-weight: 400;
     font-size: 15px;
-    background-color: white;
+    background-color: transparent;
   }
 }
 

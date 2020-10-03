@@ -2,17 +2,21 @@ import React from 'react';
 import Likes from './Likes';
 import './card.scss';
 
-const Card = ({ data }) => {
+const Card = ({ data, completed }) => {
   const { title, imogi } = data;
   return (
-    <div className="project-card">
+    <div
+      className={
+        completed ? 'project-card completed' : 'project-card in-completed'
+      }
+    >
       <div className="card-header">
         <div className="card-img">
           <p>{imogi}</p>
         </div>
 
         <div className="header-text">
-          <div>Fastify224</div>
+          <div>{title}</div>
           <Likes />
         </div>
       </div>
